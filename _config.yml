@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "낭만 개발자 | rootyJeon Blog"
 title_separator          : "-"
-subtitle                 : "낭만 개발자"
+subtitle                 : ""
 name                     : "rooty"
 description              : "Deeply Learning Deep Learning"
 url                      : "https://rootyJeon.github.io"
@@ -104,30 +104,31 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Byungwoo Jeon"
+  avatar           : "/main.jpg"
+  bio              : "Junior of Korea University, Seoul.,
+**Leader** of **Google Developer Students Club** at Korea University"
+  location         : "Seoul, Korea"
+  email            : "imbw2022@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:imbw2022@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://rootyJeon.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/profile.php?id=100017016274577"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/rootyJeon"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://www.instagram.com/im._.bw_/"
 
 # Site Footer
 footer:
@@ -137,10 +138,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url:  "https://github.com/rootyJeon"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url:  "https://github.com/rootyJeon"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -149,7 +150,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url:  "https://www.instagram.com/im._.bw_/"
 
 
 # Reading Files
