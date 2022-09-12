@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : mmistakes/minimal-mistakes
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -106,8 +106,7 @@ analytics:
 author:
   name             : "Byungwoo Jeon"
   avatar           : "/main.jpeg"
-  bio              : "Junior of Korea University, Seoul.,
-**Leader** of **Google Developer Students Club** at Korea University"
+  bio              : "Junior of Korea University, Seoul., **Leader** of **Google Developer Students Club** at Korea University."
   location         : "Seoul, Korea"
   email            : "imbw2022@gmail.com"
   links:
