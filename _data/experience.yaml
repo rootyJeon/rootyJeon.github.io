@@ -1,0 +1,16 @@
+experiences:
+- place: "Korea Univ. CS"
+  time: "Mar. 2020 - Current"
+  title: "B.S. in Korea Univ. CSE"
+  category: "school"
+
+- place: "Acreal"
+  time: "Jan. 2023 - Feb. 2023"
+  title: "AI Research Intern"
+  subtitle: "Startup"
+  category: "work"
+
+- place: "Korea Univ."
+  time: "Mar. 2020 - Current"
+  title: "B.S. in Computer Science & Engineering and Statistics"
+  category: "school"
