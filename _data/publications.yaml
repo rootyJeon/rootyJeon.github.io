@@ -2,7 +2,7 @@ papers:
 
   - title: "TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation"
     authors: "Seong Hyeon Park, Huiwon Jang, <u><b>Byungwoo Jeon</b></u>, Sukmin Yun, Paul Hongsuck Seo, and Jinwoo Shin"
-    venue: "Conference on Neural Information Processing Systems (NeurIPS), 2024, <b>Spotlight</b>"
+    venue: "Conference on Neural Information Processing Systems (NeurIPS), 2024, <span style='color: red;'><b>Spotlight</b></span>"
     paper_pdf: "/assets/papers/TrackIME.pdf"
     code: "https://openreview.net/forum?id=eKHQbgvL3G&noteId=1FfKWp17dK"
     selected: y
