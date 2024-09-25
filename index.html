@@ -5,9 +5,9 @@ layout: default
 <div class="docs-section" id="about">
   <h4>About</h4>
     <p>
-      I am a MS student of <a href="https://alinlab.kaist.ac.kr/index.html">Algorithmic Intelligence Laboratory (ALIN-LAB)</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a> at Korea Advanced Institute of Science and Technology (<a href="https://www.kaist.ac.kr/en/">KAIST</a>).
-      I received my B.E in Computer Science and Engineering / Statistics (double major) at <a href="https://www.korea.edu/mbshome/mbs/en/index.do">Korea University</a> in 2024. <br><br>
-      My research goal is to build effective representations of the 3D world therefore it can be used in real-time for real-world problems.
+      I am a M.S. student of <a href="https://alinlab.kaist.ac.kr/index.html">Algorithmic Intelligence Laboratory (ALIN-LAB)</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a> at Korea Advanced Institute of Science and Technology (<a href="https://www.kaist.ac.kr/en/">KAIST</a>).
+      I received my B.S. in Computer Science and Engineering / Statistics (double major) at <a href="https://www.korea.edu/mbshome/mbs/en/index.do">Korea University</a> in 2024. <br><br>
+      The northstar of my research is finding a unified and scalable framework aligned with multi-modalities and human preferences for various vision tasks.
     </p>
     <p>
       <!-- My primary research interests lie in the area of computer vision (CV) and machine learning (ML). Currently, my research focuses on implicit neural representations and generative models. -->
@@ -45,7 +45,7 @@ layout: default
 </div> -->
 
 <!-- ========== PUBLICATIONS ========== -->
-<!-- div class="docs-section" id="publications">
+<div class="docs-section" id="publications">
   <h4>Publications</h4>
 
   <div class="tab-content">
@@ -54,38 +54,38 @@ layout: default
       {% for paper in selected_papers %}
         <div class="paper">
           <div class="row">
-            <div class="four columns">
+            <!-- div class="four columns">
               <div class="figure">
                 <img src="{{ paper.image }}" width="100%">
               </div>
-            </div>
+            </div -->
             <div class="eight columns">
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
+              <p class="title"><b>TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation</b></p>
+              <p>Seong Hyeon Park, Huiwon Jang, <u>Byungwoo Jeon</u>, Sukmin Yun, Paul Hongsuck Seo, and Jinwoo Shin</p>
+              <p><i>Conference on Neural Information Processing Systems (NeurIPS), 2024, <p style="color:red;">Spotlight</p></i></p>
               <div class="paper-buttons">
                 {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+                  <a class="button" href="https://openreview.net/pdf?id=eKHQbgvL3G" target="_blank">Paper</a>
                 {% endif %}
 
                 {% if paper.project_page %}
-                  <a class="button" href="{{ paper.project_page }}" target="_blank">Project</a>
+                  <!-- a class="button" href="{{ paper.project_page }}" target="_blank">Project</a -->
                 {% endif %}
 
                 {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                  <!-- a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a -->
                 {% endif %}
 
                 {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                  <!-- a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a -->
                 {% endif %}
 
                 {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                  <!-- a class="button" href="{{ paper.video }}" target="_blank">Video</a -->
                 {% endif %}
 
                 {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                  <!-- a class="button" href="{{ paper.code }}" target="_blank">Code</a -->
                 {% endif %}
               </div>
             </div>
@@ -94,7 +94,7 @@ layout: default
       {% endfor %}
     </div>
 
-    <div class="tab-pane" id="papers-all">
+    <!-- div class="tab-pane" id="papers-all">
       {% for paper in site.data.publications.papers %}
         <div class="paper">
           <div class="row">
@@ -132,21 +132,21 @@ layout: default
           </div>
         </div>
     {% endfor %}
-    </div>
+    </div -->
 
-</div -->
+</div>
 
 <!-- ========== Education ========== -->
 <div class="docs-section" id="education">
   <h4>Education</h4>
         <div class="paper">
           <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Sep. 2024 - Current</b></b></p>
-          <p>MS/Ph.D student in Artificial Intelligence</p>
+          <p>M.S./Ph.D student in Artificial Intelligence</p>
         </div>
         <div class="paper">
           <p class="title"><b>Korea University, Seoul<b style="float:right;">Mar. 2020 - Aug. 2024</b></b></p>
-          <p>B.E in Computer Science & Engineering (First Major) </p>
-          <p>B.E in Statistics (Double Major) </p>
+          <p>B.S. in Computer Science & Engineering (First Major) </p>
+          <p>B.E. in Statistics (Second Major) </p>
         </div>
 </div>
 
@@ -154,19 +154,18 @@ layout: default
 <div class="docs-section" id="experience">
   <h4>Experience</h4>
         <div class="paper">
-          <p class="title"><b>AI Research Intern<b style="float:right;">Jan. 2023 - Current</b></b></p>
+          <p class="title"><b>ML Engineer<b style="float:right;">Jan. 2023 - Jan. 2024</b></b></p>
           <a href="https://arcreal.com/">Arcreal</a>
-
           <p></p>
         </div>
   
         <div class="paper">
-          <p class="title"><b>Lead<b style="float:right;">Aug. 2022 - Aug. 2023</b></b></p>
+          <p class="title"><b>Lead<b style="float:right;">Aug. 2022 - Jul. 2023</b></b></p>
           <a href="https://gdsc.community.dev/">Google Developer Student Clubs</a>
         </div>
 
         <div class="paper">
-          <p class="title"><b>Intern Developer<b style="float:right;">Jul. 2021 - Aug. 2021</b></b></p>
+          <p class="title"><b>Fullstack Engineer<b style="float:right;">Jul. 2021 - Aug. 2021</b></b></p>
           <a href="https://www.mmonstar.co.kr/">M-monstar</a>
           <p></p>
         </div>
