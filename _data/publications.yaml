@@ -1,5 +1,12 @@
 papers:
 
+  - title: "SpatialBoost: Enhancing Visual Representation through Language-Guiuded Reasoning"
+    authors: "<u><b>Byungwoo Jeon</b><sup>*</sup></u>, <a href='https://kingdy2002.github.io/'>Dongyoung Kim</a><sup>*</sup>, <a href='https://huiwon-jang.github.io'>Huiwon Jang</a>, Insoo Kim, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
+    venue: "Under review"
+    paper_pdf: "/assets/papers/TrackIME.pdf"
+    code: "https://rootyjeon.github.io/"
+    selected: y
+
   - title: "TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation"
     authors: "<a href='https://www.shpark.org'>Seong Hyeon Park</a>, <a href='https://huiwon-jang.github.io'>Huiwon Jang</a>, <u><b>Byungwoo Jeon</b></u>, <a href='https://sites.google.com/view/sukmin-yun'>Sukmin Yun</a>, <a href='https://phseo.github.io'>Paul Hongsuck Seo</a>, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
     venue: "Conference on Neural Information Processing Systems (NeurIPS), 2024, <span style='color: red;'><b>Spotlight Presentation</b></span>"
