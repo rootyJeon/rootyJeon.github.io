@@ -88,11 +88,11 @@ layout: default
     </div>
 
     <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
+      for paper in site.data.publications.papers
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p><a href="https://www.shpark.org">Seong Hyeon Park</a>, <a href="https://huiwon-jang.github.io">Huiwon Jang</a>, <u><b>Byungwoo Jeon</b></u>, <a href="https://sites.google.com/view/sukmin-yun">Sukmin Yun</a>, <a href="https://phseo.github.io">Paul Hongsuck Seo</a>, and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a></p>
-          <p><i>Conference on Neural Information Processing Systems (NeurIPS), 2024, <p style="color:red;"><b>Spotlight</b></p></i></p>
+          <p><i>on Neural Information Processing Systems (NeurIPS), 2024, <p style="color:red;"><b>Spotlight</b></p></i></p>
           
            <div class="paper-buttons">
             {% if paper.paper_pdf %}
