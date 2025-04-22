@@ -1,6 +1,6 @@
 papers:
 
-  - title: "SpatialBoost: Enhancing Visual Representation through Language-Guiuded Reasoning"
+  - title: "SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning"
     authors: "<u><b>Byungwoo Jeon</b><sup>*</sup></u>, <a href='https://kingdy2002.github.io/'>Dongyoung Kim</a><sup>*</sup>, <a href='https://huiwon-jang.github.io'>Huiwon Jang</a>, Insoo Kim, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
     venue: "Under review"
     paper_pdf: "/assets/papers/TrackIME.pdf"
