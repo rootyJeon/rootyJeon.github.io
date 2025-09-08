@@ -7,6 +7,13 @@ papers:
     code: "https://rootyjeon.github.io/"
     selected: y
 
+  - title: "Learning Feasibility from Failure Data in Vision–Language–Action Models"
+    authors: "<u><b>Byungwoo Jeon</b></u>, <a href='https://jeongeun-park-page.github.io/'>Jeongeun Park</a>, Jihwan Yoon, Juhan Park, <a href='https://sites.google.com/view/railab/professor'>Kyungjae Lee</a>, <a href='https://nhcho91.github.io/index.html'>Namhoon Cho</a>, <a href='https://sangdooyun.github.io/'>Sangdoo Yun</a>, and <a href='https://sites.google.com/view/sungjoon-choi/personal?authuser=0'>Sungjoon Choi</a>"
+    venue: "CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World, 2025"
+    paper_pdf: "/assets/papers/TrackIME.pdf"
+    code: "https://rootyjeon.github.io/"
+    selected: y
+
   - title: "TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation"
     authors: "<a href='https://www.shpark.org'>Seong Hyeon Park</a>, <a href='https://huiwon-jang.github.io'>Huiwon Jang</a>, <u><b>Byungwoo Jeon</b></u>, <a href='https://sites.google.com/view/sukmin-yun'>Sukmin Yun</a>, <a href='https://phseo.github.io'>Paul Hongsuck Seo</a>, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
     venue: "Conference on Neural Information Processing Systems (NeurIPS), 2024, <span style='color: red;'><b>Spotlight Presentation</b></span>"
