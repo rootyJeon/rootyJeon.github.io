@@ -2,7 +2,7 @@ papers:
 
   - title: "SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning"
     authors: "<u><b>Byungwoo Jeon</b></u><sup>*</sup>, <a href='https://kingdy2002.github.io/'>Dongyoung Kim</a><sup>*</sup>, <a href='https://huiwon-jang.github.io'>Huiwon Jang</a>, Insoo Kim, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
-    venue: "Under review"
+    venue: "NeurIPS Workshop on Space in Vision, Language, and Embodied AI, 2025"
     paper_pdf: "/assets/papers/TrackIME.pdf"
     code: "https://rootyjeon.github.io/"
     selected: y
