@@ -62,6 +62,10 @@ layout: default
               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
             {% endif %}
 
+            {% if paper.project %}
+              <a class="button" href="{{ paper.project | prepend: site.baseurl }}" target="_blank">Project</a>
+            {% endif %}
+
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
             {% endif %}
