@@ -8,7 +8,7 @@ papers:
     selected: y
 
   - title: "Learning Feasibility from Failure Data in Vision–Language–Action Models"
-    authors: "<u><b>Byungwoo Jeon</b></u>, <a href='https://jeongeun-park-page.github.io/'>Jeongeun Park</a>, <a href='https://www.linkedin.com/in/jihwan-%E2%80%8Dyoon-29182a365'>Jihwan Yoon</a>, <a href='https://openreview.net/profile?id=~Juhan_Park1'>Juhan Park</a>, <a href='https://sites.google.com/view/railab/professor'>Kyungjae Lee</a>, <a href='https://nhcho91.github.io/index.html'>Namhoon Cho</a>, <a href='https://sangdooyun.github.io/'>Sangdoo Yun</a>, and <a href='https://sites.google.com/view/sungjoon-choi/personal?authuser=0'>Sungjoon Choi</a>"
+    authors: "<a href='https://jeongeun-park-page.github.io/'>Jeongeun Park</a>, <a href='https://www.linkedin.com/in/jihwan-%E2%80%8Dyoon-29182a365'>Jihwan Yoon</a>, <u><b>Byungwoo Jeon</b></u>, <a href='https://openreview.net/profile?id=~Juhan_Park1'>Juhan Park</a>, <a href='https://sites.google.com/view/railab/professor'>Kyungjae Lee</a>, <a href='https://nhcho91.github.io/index.html'>Namhoon Cho</a>, <a href='https://sangdooyun.github.io/'>Sangdoo Yun</a>, and <a href='https://sites.google.com/view/sungjoon-choi/personal?authuser=0'>Sungjoon Choi</a>"
     venue: "CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World, 2025"
     paper_pdf: ""
     selected: y
