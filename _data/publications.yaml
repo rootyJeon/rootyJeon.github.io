@@ -1,16 +1,23 @@
 papers:
 
+  - title: "Vision-aligned Latent Reasoning for Multi-modal Large Language Model"
+    authors: "<u><b>Byungwoo Jeon</b></u>, <a href='https://jeongyw12382.github.io/'>Yoonwoo Jeong</a>, <a href='https://hyunseoklee-ai.github.io/'>Hyunseok Lee</a>, <a href='https://cvlab.postech.ac.kr/~mcho/'>Minsu Cho</a>, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
+    venue: "Preprint"
+    paper_pdf: "https://arxiv.org/abs/2602.04476"
+    project: "https://rootyjeon.github.io/valr/"
+    selected: y
+
   - title: "SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning"
     authors: "<u><b>Byungwoo Jeon</b></u><sup>*</sup>, <a href='https://kingdy2002.github.io/'>Dongyoung Kim</a><sup>*</sup>, <a href='https://huiwon-jang.github.io'>Huiwon Jang</a>, <a href='https://insoo-best.github.io/'>Insoo Kim</a>, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
     venue: "NeurIPS Workshop on Space in Vision, Language, and Embodied AI, 2025"
-    paper_pdf: ""
+    paper_pdf: "https://openreview.net/forum?id=q4gW7LorVN"
     project: "https://rootyjeon.github.io/spatialboost/"
     selected: y
 
   - title: "Learning Feasibility from Failure Data in Vision–Language–Action Models"
     authors: "<a href='https://jeongeun-park-page.github.io/'>Jeongeun Park</a>, <a href='https://www.linkedin.com/in/jihwan-%E2%80%8Dyoon-29182a365'>Jihwan Yoon</a>, <u><b>Byungwoo Jeon</b></u>, <a href='https://openreview.net/profile?id=~Juhan_Park1'>Juhan Park</a>, <a href='https://sites.google.com/view/railab/professor'>Kyungjae Lee</a>, <a href='https://nhcho91.github.io/index.html'>Namhoon Cho</a>, <a href='https://sangdooyun.github.io/'>Sangdoo Yun</a>, and <a href='https://sites.google.com/view/sungjoon-choi/personal?authuser=0'>Sungjoon Choi</a>"
     venue: "CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World, 2025"
-    paper_pdf: ""
+    paper_pdf: "https://openreview.net/forum?id=tKRTU90TT3"
     selected: y
 
   - title: "TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation"
