@@ -5,6 +5,7 @@ papers:
     venue: "Preprint"
     paper_pdf: "https://arxiv.org/abs/2602.04476"
     project: "https://rootyjeon.github.io/valr/"
+    code: "https://github.com/rootyJeon/Vision-aligned-Latent-Reasoning"
     selected: y
 
   - title: "SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning"
