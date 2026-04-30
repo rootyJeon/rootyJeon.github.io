@@ -2,7 +2,7 @@ papers:
 
   - title: "Vision-aligned Latent Reasoning for Multi-modal Large Language Model"
     authors: "<u><b>Byungwoo Jeon</b></u>, <a href='https://jeongyw12382.github.io/'>Yoonwoo Jeong</a>, <a href='https://hyunseoklee-ai.github.io/'>Hyunseok Lee</a>, <a href='https://cvlab.postech.ac.kr/~mcho/'>Minsu Cho</a>, and <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
-    venue: "Preprint"
+    venue: "International Conference on Machine Learning (ICML), 2026"
     paper_pdf: "https://arxiv.org/abs/2602.04476"
     project: "https://rootyjeon.github.io/valr/"
     code: "https://github.com/rootyJeon/Vision-aligned-Latent-Reasoning"
