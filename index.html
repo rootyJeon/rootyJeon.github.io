@@ -1,212 +1,277 @@
----
-layout: default
----
-<!-- ========== About ========== -->
-<div class="docs-section" id="about">
-  <h4>About</h4>
-    <p>
-      I am a 1st year Ph.D student of <a href="https://alinlab.kaist.ac.kr/index.html">Algorithmic Intelligence Laboratory (ALIN-LAB)</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a> at Korea Advanced Institute of Science and Technology (<a href="https://www.kaist.ac.kr/en/">KAIST</a>).
-      I received my B.S. in Computer Science and Engineering / Statistics (double major) at <a href="https://www.korea.edu/sites/en/index.do">Korea University</a> in 2024.<br><br>
-      The north star of my research is to develop a unified and scalable framework aligned with multi-modalities and human preferences for various vision-centric tasks. Currently, I am collaborating with <a href="https://cvlab.postech.ac.kr/~mcho/">Prof. Minsu Cho</a> from <a href="https://cvlab.postech.ac.kr/news">POSTECH CVLAB</a> and <a href="https://sites.google.com/view/sungjoon-choi/personal?authuser=0">Prof. Sungjoon Choi</a> from <a href="https://sites.google.com/view/sungjoon-choi/home?authuser=0">Korea Univ. RILAB</a> for related topics.<br><br>
-      If you want to have a discussion or coffee chat with me, e-mail me or sign up <a href="https://calendly.com/imbw2022/coffee-chat-or-discussion">here</a>. I am always positively open to all kinds of collaborations!
-    </p>
-    <p>
-      <!-- My primary research interests lie in the area of computer vision (CV) and machine learning (ML). Currently, my research focuses on implicit neural representations and generative models. -->
-          <!-- Here are some keywords:
-          <ul>
-            <li>
-              Q
-            </li>
-            <li>
-              R
-            </li>
-            <li>
-              Efficiency
-            </li>
-            <li>
-              Robustness
-            </li>
-          </ul> -->
-      </p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Byungwoo Jeon</title>
+  <meta name="description" content="Homepage of Byungwoo Jeon">
+  <meta name="author" content="Byungwoo Jeon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ========== News ========== -->
-<!-- <div class="docs-section" id="news">
-  <h4>News</h4>
-    <ul>
-      <li>
-        <b style="color:cadetblue">[Oct. 2022]</b> &nbsp&nbsp
-         Our paper on Graph-Inducted Transformers (GIT) has been accepted to <b>EMNLP 2022</b>!
-      </li>
-      <li>
-        <b style="color:cadetblue">[Aug. 2022]</b>&nbsp&nbsp
-        Started my Ph.D. journey at <b>Georgia Tech</b>!
-      </li>
-    </ul>
-</div> -->
+  <link rel="stylesheet" href="libs/external/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="libs/external/academicons-1.8.6/css/academicons.min.css">
+  <link rel="stylesheet" href="libs/custom/my_css.css">
+</head>
+<body>
 
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-  
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
+<main>
+  <div class="container">
 
-            {% if paper.project %}
-              <a class="button" href="{{ paper.project | prepend: site.baseurl }}" target="_blank">Project</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-header">
+        <div class="hero-info">
+          <h1>Byungwoo Jeon</h1>
+          <p class="subtitle">imbw2024@kaist.ac.kr</p>
         </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p><a href="https://www.shpark.org">Seong Hyeon Park</a>, <a href="https://huiwon-jang.github.io">Huiwon Jang</a>, <u><b>Byungwoo Jeon</b></u>, <a href="https://sites.google.com/view/sukmin-yun">Sukmin Yun</a>, <a href="https://phseo.github.io">Paul Hongsuck Seo</a>, and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a></p>
-          <p><i>Conference on Neural Information Processing Systems (NeurIPS), 2024, <p style="color:red;"><b>Spotlight</b></p></i></p>
-          
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
+        <div class="nav-sections">
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
         </div>
-      {% endfor %}
+      </div>
+    </section>
+
+    <!-- ===== Intro ===== -->
+    <section class="intro-header">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2 class="greeting">Hi, I'm Byungwoo!</h2>
+          <p class="intro-bio">
+            I am a 1st year Ph.D student of <a href="https://alinlab.kaist.ac.kr/index.html">ALIN-LAB</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a> at <a href="https://www.kaist.ac.kr/en/">KAIST</a>.
+            I received my B.S. in CSE and STAT at <a href="https://www.korea.edu/sites/en/index.do">Korea University</a> in 2024.
+          </p>
+          <p class="intro-bio">
+            The north star of my research is to develop a unified and scalable framework aligned with multi-modalities and human preferences for various vision-centric tasks. Currently, I am collaborating with <a href="https://cvlab.postech.ac.kr/~mcho/">Prof. Minsu Cho</a> from <a href="https://cvlab.postech.ac.kr/news">POSTECH CVLAB</a> and <a href="https://sites.google.com/view/sungjoon-choi/personal?authuser=0">Prof. Sungjoon Choi</a> from <a href="https://sites.google.com/view/sungjoon-choi/home?authuser=0">Korea Univ. RILAB</a> for related topics.
+          </p>
+          <p class="intro-bio">
+            If you want to have a discussion or coffee chat with me, please e-mail me. I am always positively open to all kinds of collaborations!
+          </p>
+          <ul class="intro-links">
+            <li><a href="mailto:imbw2024@kaist.ac.kr"><i class="fa-solid fa-envelope"></i> <span>Email</span></a></li>
+            <li><a href="assets/CV_ByungwooJeon.pdf" target="_blank" rel="noopener noreferrer"><i class="ai ai-cv"></i> <span>CV</span></a></li>
+            <li><a href="https://github.com/rootyJeon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> <span>GitHub</span></a></li>
+            <li><a href="https://scholar.google.com/citations?user=BQtl4N4AAAAJ" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i> <span>Scholar</span></a></li>
+            <li><a href="https://www.linkedin.com/in/byungwoo-jeon-53224420a" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span></a></li>
+          </ul>
+        </div>
+        <div class="intro-image">
+          <img src="main.jpg" alt="Byungwoo Jeon">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== News ===== -->
+    <section class="section-block" id="news">
+      <h2>News</h2>
+      <table class="news-table">
+        <tr>
+          <td class="news-date">Apr, 2026</td>
+          <td class="news-desc">🎉 VaLR has been accepted to <strong>ICML 2026</strong>! See you all in Seoul 🇰🇷</td>
+        </tr>
+        <tr>
+          <td class="news-date">Mar, 2026</td>
+          <td class="news-desc">🎉 Released two papers, VaLR and SpatialBoost, on arXiv.</td>
+        </tr>
+        <tr>
+          <td class="news-date">Sep, 2024</td>
+          <td class="news-desc">🎉 I start my Ph.D. journey at KAIST AI.</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="section-block" id="publications">
+      <h2>Publications</h2>
+
+      <div class="publications-list">
+
+        <article class="publication">
+          <div class="pub-content">
+            <div class="pub-thumbnail">
+              <img src="assets/figures/valr.png" alt="Vision-aligned Latent Reasoning" loading="lazy">
+            </div>
+            <div class="pub-info">
+              <h3 class="pub-title">Vision-aligned Latent Reasoning for Multi-modal Large Language Model</h3>
+              <p class="pub-authors">
+                <strong>Byungwoo Jeon</strong>, <a href="https://jeongyw12382.github.io/">Yoonwoo Jeong</a>, <a href="https://hyunseoklee-ai.github.io/">Hyunseok Lee</a>, <a href="https://cvlab.postech.ac.kr/~mcho/">Minsu Cho</a>, and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>
+              </p>
+              <p class="pub-venue"><strong>ICML</strong> 2026</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2602.04476" target="_blank">arXiv</a>
+                <a href="https://rootyjeon.github.io/valr/" target="_blank">Website</a>
+                <a href="https://github.com/rootyJeon/Vision-aligned-Latent-Reasoning" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-content">
+            <div class="pub-thumbnail">
+              <img src="assets/figures/spatialboost.png" alt="SpatialBoost" loading="lazy">
+            </div>
+            <div class="pub-info">
+              <h3 class="pub-title">SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning</h3>
+              <p class="pub-authors">
+                <strong>Byungwoo Jeon</strong>*, <a href="https://kingdy2002.github.io/">Dongyoung Kim</a>*, <a href="https://huiwon-jang.github.io">Huiwon Jang</a>, <a href="https://insoo-best.github.io/">Insoo Kim</a>, and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>
+              </p>
+              <p class="pub-venue">NeurIPS SpaVLE Workshop 2025</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2603.22057" target="_blank">arXiv</a>
+                <a href="https://rootyjeon.github.io/spatial-boost/" target="_blank">Website</a>
+                <a href="https://github.com/rootyJeon/SpatialBoost" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-content">
+            <div class="pub-thumbnail">
+              <video id="vine-video" autoplay loop muted playsinline>
+                <source src="assets/figures/vine.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="pub-info">
+              <h3 class="pub-title">Learning Feasibility from Failure Data in Vision–Language–Action Models</h3>
+              <p class="pub-authors">
+                <a href="https://jeongeun-park-page.github.io/">Jeongeun Park</a>, <a href="https://www.linkedin.com/in/jihwan-%E2%80%8Dyoon-29182a365">Jihwan Yoon</a>, <strong>Byungwoo Jeon</strong>, <a href="https://openreview.net/profile?id=~Juhan_Park1">Juhan Park</a>, <a href="https://sites.google.com/view/railab/professor">Kyungjae Lee</a>, <a href="https://nhcho91.github.io/index.html">Namhoon Cho</a>, <a href="https://sangdooyun.github.io/">Sangdoo Yun</a>, and <a href="https://sites.google.com/view/sungjoon-choi/personal?authuser=0">Sungjoon Choi</a>
+              </p>
+              <p class="pub-venue">CoRL SAFE-ROL Workshop 2025</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2512.03913" target="_blank">arXiv</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-content">
+            <div class="pub-thumbnail">
+              <video autoplay loop muted playsinline>
+                <source src="assets/figures/trackime.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="pub-info">
+              <h3 class="pub-title">TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation</h3>
+              <p class="pub-authors">
+                <a href="https://www.shpark.org">Seong Hyeon Park</a>, <a href="https://huiwon-jang.github.io">Huiwon Jang</a>, <strong>Byungwoo Jeon</strong>, <a href="https://sites.google.com/view/sukmin-yun">Sukmin Yun</a>, <a href="https://phseo.github.io">Paul Hongsuck Seo</a>, and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>
+              </p>
+              <p class="pub-venue"><strong>NeurIPS</strong> 2024 &bull; <span class="award">Spotlight (326/15671=2.08%)</span></p>
+              <div class="pub-links">
+                <a href="assets/papers/TrackIME.pdf" target="_blank">Paper</a>
+                <a href="https://trackime.github.io/" target="_blank">Website</a>
+                <a href="https://github.com/kami93/trackime" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section-block" id="education">
+      <h2>Education</h2>
+
+      <div class="publications-list">
+        <div class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Korea Advanced Institute of Science and Technology (KAIST)</h3>
+            <span class="entry-date">Sep. 2024 – Current</span>
+          </div>
+          <p class="entry-detail">Ph.D. student in Artificial Intelligence</p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Korea University, Seoul</h3>
+            <span class="entry-date">Mar. 2020 – Aug. 2024</span>
+          </div>
+          <p class="entry-detail">B.S. in Computer Science & Engineering (First Major)</p>
+          <p class="entry-detail">B.E. in Statistics (Double Major)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section-block" id="experience">
+      <h2>Experience</h2>
+
+      <div class="publications-list">
+        <div class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">ML Engineer</h3>
+            <span class="entry-date">Jan. 2023 – Jan. 2024</span>
+          </div>
+          <p class="entry-detail"><a href="https://arcreal.com/">Arcreal</a></p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Lead</h3>
+            <span class="entry-date">Aug. 2022 – Jul. 2023</span>
+          </div>
+          <p class="entry-detail"><a href="https://gdg.community.dev/chapters/">Google Developer Student Clubs</a></p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Fullstack Engineer</h3>
+            <span class="entry-date">Jul. 2021 – Aug. 2021</span>
+          </div>
+          <p class="entry-detail"><a href="https://www.mmonstar.co.kr/">M-monstar</a></p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col">Byungwoo Jeon</div>
+      <div class="footer-col">based on <a href="https://web.media.mit.edu/~msaveski/" style="font-weight: lighter">Martin Saveski</a>'s template</div>
+      <div class="footer-col">
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=b0a7a7&w=110&t=n&d=OFFPyeNz6g7A3pG5atHP1QRtN6_oRuzNwcxv_xU3FGU&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=ffffff"></script>
+      </div>
     </div>
   </div>
-</div>
+</footer>
 
+<script src="libs/external/jquery-3.1.1.min.js"></script>
+<script src="libs/custom/my_js.js"></script>
+<script>
+  document.getElementById('vine-video').playbackRate = 3.0;
 
-<!-- ========== Education ========== -->
-<div class="docs-section" id="education">
-  <h4>Education</h4>
-        <div class="paper">
-          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Sep. 2024 - Current</b></b></p>
-          <p>M.S./Ph.D student in Artificial Intelligence</p>
-        </div>
-        <div class="paper">
-          <p class="title"><b>Korea University, Seoul<b style="float:right;">Mar. 2020 - Aug. 2024</b></b></p>
-          <p>B.S. in Computer Science & Engineering (First Major) </p>
-          <p>B.E. in Statistics (Second Major) </p>
-        </div>
-</div>
+  (function() {
+    var toggle = document.getElementById('theme-toggle');
+    var icon = document.getElementById('theme-icon');
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      icon.className = 'fa-solid fa-sun';
+    }
+    toggle.addEventListener('click', function() {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        icon.className = 'fa-solid fa-moon';
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        icon.className = 'fa-solid fa-sun';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  })();
+</script>
 
-<!-- ========== Experience ========== -->
-<div class="docs-section" id="experience">
-  <h4>Experience</h4>
-        <div class="paper">
-          <p class="title"><b>ML Engineer<b style="float:right;">Jan. 2023 - Jan. 2024</b></b></p>
-          <a href="https://arcreal.com/">Arcreal</a>
-          <p></p>
-        </div>
-  
-        <div class="paper">
-          <p class="title"><b>Lead<b style="float:right;">Aug. 2022 - Jul. 2023</b></b></p>
-          <a href="https://gdg.community.dev/chapters/">Google Developer Student Clubs</a>
-        </div>
-
-        <div class="paper">
-          <p class="title"><b>Fullstack Engineer<b style="float:right;">Jul. 2021 - Aug. 2021</b></b></p>
-          <a href="https://www.mmonstar.co.kr/">M-monstar</a>
-          <p></p>
-        </div>
-</div>
-
-
-<!-- ========== Honors & Awards ========== -->
-<!-- <div class="docs-section" id="honors">
-  <h4>Honors & Awards</h4>
-        <div class="paper">
-          <p class="title"><b>xxx<b style="float:right;">Sep. 2021 - Feb. 2022</b></b></p>
-          <p class="title"><b>xxx</b></p>
-          <p>Award</p>
-          <p></p>
-        </div>
-        <div class="paper">
-          <p class="title"><b>xxx</b></p>
-          <p>1st prize</p>
-          <p></p>
-        </div>
-</div> -->
-
-
-<!-- ========== RESUME ========== -->
-<!-- <div class="docs-section" id="resume">
-  <h4>Vitæ</h4> -->
-
-  <!-- <p>Full CV in <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p> -->
-  <!-- The Timeline -->
-  <!-- <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div> -->
-
-</div>
+</body>
+</html>
