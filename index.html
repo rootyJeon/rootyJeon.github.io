@@ -29,6 +29,7 @@
           <a href="#publications">Publications</a>
           <a href="#education">Education</a>
           <a href="#experience">Experience</a>
+          <a href="#posts">Posts</a>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
             <i class="fa-solid fa-moon" id="theme-icon"></i>
           </button>
@@ -46,11 +47,11 @@
         <div class="intro-text">
           <h2 class="greeting">Hi, I'm Byungwoo!</h2>
           <p class="intro-bio">
-            I am a 3rd year Ph.D. student of <a href="https://alinlab.kaist.ac.kr/index.html">ALIN-LAB</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a> at <a href="https://www.kaist.ac.kr/en/">KAIST</a>.
+            I am a 3rd year Ph.D. student of <a href="https://alinlab.kaist.ac.kr/index.html">AGI-LAB</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a> at <a href="https://www.kaist.ac.kr/en/">KAIST</a>.
             I received my B.S. in CSE and STAT at <a href="https://www.korea.edu/sites/en/index.do">Korea University</a> in 2024.
           </p>
           <p class="intro-bio">
-            The north star of my research is to develop a unified and scalable vision framework aligned with multi-modalities and human preferences. Recently, I am fortunate to be collaborating with <a href="https://www.sainingxie.com/">Prof. Saining Xie</a> from <a href="https://cims.nyu.edu/dynamic/">NYU Courant</a>, <a href="https://cvlab.postech.ac.kr/~mcho/">Prof. Minsu Cho</a> from <a href="https://cvlab.postech.ac.kr/news">POSTECH CVLAB</a>, and <a href="https://sunghwanhong.github.io/">Dr. Sunghwan Hong</a> from <a href="https://cvg.ethz.ch/">ETH-Zürich CVG</a> on related topics.
+            The north star of my research is to develop a unified and scalable vision framework that aligns with multi-modalities and human preferences. To this end, I am privileged to be collaborating on related topics with <a href="https://www.sainingxie.com/">Prof. Saining Xie</a> at <a href="https://cims.nyu.edu/dynamic/">NYU Courant</a>, <a href="https://cvlab.postech.ac.kr/~mcho/">Prof. Minsu Cho</a> at <a href="https://cvlab.postech.ac.kr/news">POSTECH CVLAB</a>, and <a href="https://sunghwanhong.github.io/">Dr. Sunghwan Hong</a> at <a href="https://cvg.ethz.ch/">ETH Zürich CVG</a>.
           </p>
           <p class="intro-bio">
             If you want to have a discussion or coffee chat with me, please e-mail me. I am always positively open to all kinds of collaborations!
@@ -144,7 +145,7 @@
               <p class="pub-venue"><strong>NeurIPS</strong> 2026</p>
               <div class="pub-links">
                 <a href="" target="_blank">arXiv</a>
-                <a href="https://rootyjeon.github.io/latent-reasoning-umm/" target="_blank">Website</a>
+                <a href="https://rootyjeon.github.io/larc-umm/" target="_blank">Website</a>
               </div>
             </div>
           </div>
@@ -351,6 +352,23 @@
       </div>
     </section>
 
+    <!-- ===== Recent Posts ===== -->
+    <section class="section-block" id="posts">
+      <div class="posts-head">
+        <h2>Recent Posts</h2>
+        <div class="posts-nav">
+          <button type="button" class="posts-arrow" data-dir="-1" aria-label="Scroll posts left"><i class="fa-solid fa-chevron-left"></i></button>
+          <button type="button" class="posts-arrow" data-dir="1" aria-label="Scroll posts right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <p class="section-note">
+        Posts and reposts from <a href="https://x.com/rootyjeon" target="_blank" rel="noopener noreferrer">X</a> and
+        <a href="https://www.linkedin.com/in/byungwoo-jeon-53224420a" target="_blank" rel="noopener noreferrer">LinkedIn</a>. Scroll sideways to browse.
+      </p>
+      <div class="posts-strip" id="posts-strip"></div>
+      <p class="section-note posts-empty" id="posts-empty" hidden>No posts yet.</p>
+    </section>
+
   </div>
 </main>
 
@@ -368,6 +386,7 @@
 
 <script src="libs/external/jquery-3.1.1.min.js"></script>
 <script src="libs/custom/my_js.js"></script>
+<script src="libs/custom/posts.js"></script>
 <script>
   document.getElementById('vine-video').playbackRate = 3.0;
 

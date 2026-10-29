@@ -1,0 +1,48 @@
+# Adds a post to the "Recent Posts" section without editing files by hand:
+# GitHub → Actions → "Add post" → Run workflow → paste the X / LinkedIn post URL.
+name: Add post
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Post URL (x.com/.../status/... or linkedin.com/posts/...)"
+        required: true
+        type: string
+      repost:
+        description: "I reposted this (adds a 'Reposted by me' label)"
+        type: boolean
+        default: false
+      pin:
+        description: "Pin to the front of the list"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add URL to posts.json
+        env:
+          POST_URL: ${{ inputs.url }}
+          REPOST: ${{ inputs.repost }}
+          PIN: ${{ inputs.pin }}
+        run: |
+          flags=""
+          [ "$REPOST" = "true" ] && flags="$flags --repost"
+          [ "$PIN" = "true" ] && flags="$flags --pin"
+          python3 scripts/add_post.py $flags "$POST_URL"
+      - name: Commit and push
+        env:
+          POST_URL: ${{ inputs.url }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add posts.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Add post: $POST_URL"
+          git push
