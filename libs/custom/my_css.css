@@ -222,8 +222,9 @@ strong {
 .intro-links a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
-  padding: 0.5em 0.6em;
+  padding: 0.5em 0.65em;
   color: var(--color-text);
   text-decoration: none;
   width: 100%;
@@ -234,7 +235,7 @@ strong {
 }
 
 .intro-links i {
-  font-size: 1em;
+  font-size: 1.3em;
   color: var(--color-text);
 }
 
