@@ -18,7 +18,7 @@
   function parsePost(url) {
     var m;
     if ((m = url.match(/^https?:\/\/(?:www\.|mobile\.)?(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status(?:es)?\/(\d+)/))) {
-      return { platform: 'x', id: m[2], url: 'https://twitter.com/' + m[1] + '/status/' + m[2],
+      return { platform: 'x', id: m[2], user: m[1], url: 'https://twitter.com/' + m[1] + '/status/' + m[2],
                time: snowflakeTime(m[2], 1288834974657) };
     }
     if ((m = url.match(/linkedin\.com\/.*?(urn:li:(?:activity|share|ugcPost):(\d+))/))) {
@@ -35,17 +35,43 @@
     return document.documentElement.getAttribute('data-theme') === 'dark';
   }
 
+  function formatDate(ms) {
+    if (!ms) return '';
+    try {
+      return new Date(ms).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    } catch (e) { return ''; }
+  }
+
+  function cardHeader(p) {
+    var head = document.createElement('div');
+    head.className = 'post-head';
+    var isX = p.platform === 'x';
+    var left = '<span class="post-platform">' +
+      (isX ? '<i class="fa-brands fa-x-twitter"></i> @' + p.user : '<i class="fa-brands fa-linkedin"></i> LinkedIn') +
+      '</span>';
+    if (p.repost) left += '<span class="post-chip"><i class="fa-solid fa-retweet"></i> Reposted</span>';
+    if (p.pin) left += '<span class="post-chip post-chip--pin"><i class="fa-solid fa-thumbtack"></i> Pinned</span>';
+    var right = '<span class="post-date">' + formatDate(p.time) + '</span>' +
+      '<a class="post-open" href="' + p.url + '" target="_blank" rel="noopener noreferrer" aria-label="Open post">' +
+      '<i class="fa-solid fa-arrow-up-right-from-square"></i></a>';
+    head.innerHTML = '<span class="post-head-left">' + left + '</span><span class="post-head-right">' + right + '</span>';
+    return head;
+  }
+
+  function updateArrows() {
+    var max = strip.scrollWidth - strip.clientWidth - 1;
+    Array.prototype.forEach.call(document.querySelectorAll('.posts-arrow'), function (btn) {
+      var dir = Number(btn.getAttribute('data-dir'));
+      btn.disabled = dir < 0 ? strip.scrollLeft <= 0 : strip.scrollLeft >= max;
+    });
+  }
+
   function render() {
     strip.innerHTML = '';
     posts.forEach(function (p) {
       var card = document.createElement('div');
       card.className = 'post-card post-card--' + p.platform;
-      if (p.repost) {
-        var label = document.createElement('div');
-        label.className = 'post-label';
-        label.innerHTML = '<i class="fa-solid fa-retweet"></i> Reposted by me';
-        card.appendChild(label);
-      }
+      card.appendChild(cardHeader(p));
       var body = document.createElement('div');
       body.className = 'post-body';
       card.appendChild(body);
@@ -76,7 +102,10 @@
       }
     });
     if (window.twttr && twttr.widgets) twttr.widgets.load(strip);
+    updateArrows();
   }
+  strip.addEventListener('scroll', updateArrows, { passive: true });
+  window.addEventListener('resize', updateArrows);
 
   function loadWidgets() {
     if (!posts.some(function (p) { return p.platform === 'x'; })) return;

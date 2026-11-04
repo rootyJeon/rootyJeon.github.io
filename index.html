@@ -368,6 +368,16 @@
       <p class="section-note posts-empty" id="posts-empty" hidden>No posts yet.</p>
     </section>
 
+    <!-- ===== Robot (Franka arm) ===== -->
+    <section class="section-block robot-stage" id="robot" aria-label="Playground">
+      <h2>Playground</h2>
+      <p class="section-note">A Franka Panda on my desk. Move your cursor, click things, make a mess.</p>
+      <div class="robot-view" id="robot-view" role="img" aria-label="A Franka Panda robot arm on a desk that follows your cursor and picks up objects">
+        <div class="robot-bubble" id="robot-bubble" hidden></div>
+        <p class="robot-status" id="robot-status">Loading the robot&hellip;</p>
+      </div>
+    </section>
+
   </div>
 </main>
 
@@ -386,6 +396,15 @@
 <script src="libs/external/jquery-3.1.1.min.js"></script>
 <script src="libs/custom/my_js.js"></script>
 <script src="libs/custom/posts.js"></script>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+</script>
+<script src="libs/custom/panda3d.js"></script>
 <script>
   document.getElementById('vine-video').playbackRate = 3.0;
 
